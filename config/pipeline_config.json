@@ -1,0 +1,137 @@
+{
+    "genome_scoring": {
+        "sprint_variants": {
+            "ACTN3": {
+                "rs1815739": {
+                    "effect": "Speed/power performance",
+                    "beneficial_allele": "C",
+                    "risk_allele": "T",
+                    "impact": "R577X variant affects fast-twitch muscle fiber production",
+                    "weight": 1.0
+                }
+            },
+            "ACE": {
+                "rs4341": {
+                    "effect": "Power/endurance balance",
+                    "beneficial_allele": "G",
+                    "risk_allele": "C",
+                    "impact": "Affects muscle strength and power output",
+                    "weight": 0.9
+                }
+            },
+            "PPARGC1A": {
+                "rs8192678": {
+                    "effect": "Energy metabolism",
+                    "beneficial_allele": "G",
+                    "risk_allele": "A",
+                    "impact": "Influences mitochondrial function and energy production",
+                    "weight": 0.8
+                }
+            },
+            "AMPD1": {
+                "rs17602729": {
+                    "effect": "Energy metabolism",
+                    "beneficial_allele": "G",
+                    "risk_allele": "A",
+                    "impact": "Affects muscle energy production during intense exercise",
+                    "weight": 0.7
+                }
+            },
+            "HIF1A": {
+                "rs11549465": {
+                    "effect": "Oxygen utilization",
+                    "beneficial_allele": "C",
+                    "risk_allele": "T",
+                    "impact": "Influences adaptation to high-intensity training",
+                    "weight": 0.8
+                }
+            },
+            "IL6": {
+                "rs1800795": {
+                    "effect": "Recovery and inflammation",
+                    "beneficial_allele": "G",
+                    "risk_allele": "C",
+                    "impact": "Affects post-exercise recovery and adaptation",
+                    "weight": 0.6
+                }
+            }
+        },
+        "scoring_weights": {
+            "homozygous_beneficial": 1.0,
+            "heterozygous": 0.5,
+            "homozygous_risk": 0.0
+        }
+    },
+    "network_analysis": {
+        "interaction_types": [
+            "physical",
+            "genetic",
+            "regulatory"
+        ],
+        "confidence_threshold": 0.7,
+        "max_interaction_depth": 2,
+        "community_detection": {
+            "algorithm": "louvain",
+            "resolution": 1.0
+        },
+        "centrality_metrics": [
+            "degree",
+            "betweenness",
+            "eigenvector"
+        ]
+    },
+    "database_integration": {
+        "apis": {
+            "string": {
+                "base_url": "https://string-db.org/api",
+                "version": "11.5",
+                "species": 9606,
+                "required_score": 700
+            },
+            "uniprot": {
+                "base_url": "https://rest.uniprot.org/uniprotkb",
+                "format": "json"
+            },
+            "reactome": {
+                "base_url": "https://reactome.org/ContentService/data",
+                "species": "Homo sapiens"
+            }
+        },
+        "cache_settings": {
+            "enable_cache": true,
+            "cache_duration_days": 30,
+            "max_cache_size_mb": 1000
+        },
+        "rate_limits": {
+            "calls_per_second": 10,
+            "max_retries": 3,
+            "retry_delay_seconds": 1
+        }
+    },
+    "hpc_settings": {
+        "max_workers": null,
+        "memory_limit": null,
+        "threads_per_worker": 1,
+        "scheduler_port": 8786,
+        "dashboard_address": ":8787"
+    },
+    "output_settings": {
+        "report_formats": [
+            "json",
+            "excel",
+            "html"
+        ],
+        "visualization": {
+            "network_layout": "spring",
+            "node_size_factor": 500,
+            "edge_width_factor": 1,
+            "color_scheme": "viridis"
+        }
+    },
+    "logging": {
+        "level": "INFO",
+        "file_output": true,
+        "console_output": true,
+        "log_format": "%(asctime)s - %(levelname)s - %(message)s"
+    }
+}
