@@ -688,6 +688,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 1. Yang, N., et al. (2003). ACTN3 genotype is associated with human elite athletic performance. American Journal of Human Genetics.
 2. Ahmetov, I.I., et al. (2016). Genes and Athletic Performance. Advances in Clinical Chemistry.
 3. Bouchard, C., et al. (2011). Genomic predictors of trainability. Experimental Physiology.
+4. [Sachikonye, K. (2025). Pollio: A High-Performance Genomic AnalysisFrameworkfor Sprint Performance Assessment](./pollio.pdf)
 
 ## Acknowledgments
 - [Dante Labs](https://dantelabs.com/) for genomic data processing
