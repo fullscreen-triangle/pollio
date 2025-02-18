@@ -1,5 +1,8 @@
 # Pollio
 
+[![Python Version](https://img.shields.io/pypi/pyversions/science-platform.svg)](https://pypi.org/project/science-platform/)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 ## Overview
 This pipeline implements a comprehensive genetic analysis framework for evaluating sprint performance potential through genomic variants. It combines high-performance computing with biological network analysis to provide insights into an individual's genetic predisposition for sprint-related athletic performance.
 
